@@ -30,6 +30,7 @@ spec:
             - '--probe.kubernetes.role=host'
             - '--probe.docker.bridge=docker0'
             - '--probe.docker=true'
+            - '--probe.no-controls' # DO NOT ALLOW TERMINAL/WRITE ACCESS
             - 'weave-scope-app.weave.svc.cluster.local.:80'
           env:
             - name: SCOPE_HOSTNAME
